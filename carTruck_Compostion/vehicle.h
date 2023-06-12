@@ -11,8 +11,8 @@ protected:				//protected so that derived classes can access them
 	int year;
 	int speed;
 
-public:
-	Vehicle(const std::string& color, int year, const std::string& make, const std::string& model, int speed);
+public:					//public so that derived classes can access them
+	Vehicle(const std::string& color, int year, const std::string& make, const std::string& model);
 
 	virtual void soundHorn() const;
 	virtual void start() const;

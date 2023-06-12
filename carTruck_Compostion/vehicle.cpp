@@ -1,8 +1,9 @@
 #include "vehicle.h"
 #include <iostream>
 
-Vehicle::Vehicle(const std::string& color, int year, const std::string& make, const std::string& model, int speed) : color(color), year(year), make(make), model(model), speed(speed) {}
+Vehicle::Vehicle(const std::string& color, int year, const std::string& make, const std::string& model) : color(color), year(year), make(make), model(model) { speed = 0; }
 
+// Vehicle member functions
 void Vehicle::soundHorn() const { std::cout << "Vehicle horn" << std::endl; }
 void Vehicle::start() const { std::cout << "Vehicle started" << std::endl; }
 void Vehicle::stop() const { std::cout << "Vehicle stopped" << std::endl; }
@@ -14,6 +15,7 @@ void Vehicle::accelerate() {
 	}
 	std::cout << "Acceleration Complete" << std::endl;
 }
+
 void Vehicle::decelerate() {
 	std::cout << "Vehicle is decelerating" << std::endl;
 	for (size_t i = 0; i < 10; i++) {

@@ -6,7 +6,7 @@ class Truck {
 private:
 	Vehicle vehicle;
 public:
-	Truck(const std::string& color, int year, const std::string& make, const std::string& model, int speed);
+	Truck(const std::string& color, int year, const std::string& make, const std::string& model);
 
 	void soundHorn() const;
 	void start() const;
